@@ -29,6 +29,7 @@ syntax	enable
 let		g:sonokai_transparent_background = 1
 silent!	colorscheme	sonokai
 set		colorcolumn=81
+set		mouse=
 set		showcmd
 set		autoindent
 set		smarttab
