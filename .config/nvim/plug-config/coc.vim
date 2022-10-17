@@ -152,6 +152,9 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " show chunk diff at current position
 nmap gs <Plug>(coc-git-chunkinfo)
+" navigate conflicts of current buffer
+nmap [c <Plug>(coc-git-prevconflict)
+nmap ]c <Plug>(coc-git-nextconflict)
 
 " extensions to install
 let g:coc_global_extensions = [
