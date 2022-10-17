@@ -96,6 +96,28 @@ plugins=(command-not-found git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# FILES
+
+if [ -d $HOME/.local/bin ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d $HOME/gems/bin ]; then
+    export PATH="$HOME/gems/bin:$PATH"
+fi
+
+if [ -d $HOME/.npm-global/bin ]; then
+	export PATH="$HOME/.npm-global/bin:$PATH"
+fi
+
+if [ -x $HOME/.zshlrc ]; then
+    source $HOME/.zshlrc
+fi
+
+if [ -f $HOME/.cargo/env ]; then
+	. $HOME/.cargo/env
+fi
+
 # VARIABLES
 
 export GITUSER=valfur03
@@ -121,27 +143,5 @@ local vfurmane_gpg=$(gpg --list-secret-keys --with-colons --keyid-format=long | 
 	
 alias gituser="$valfur03_git_base"
 alias gituser42="$vfurmane_git_base"
-
-# FUNCTIONS
-
-if [ -d $HOME/.local/bin ]; then
-    export PATH="$HOME/.local/bin:$PATH"
-fi
-
-if [ -d $HOME/gems/bin ]; then
-    export PATH="$HOME/gems/bin:$PATH"
-fi
-
-if [ -d $HOME/.npm-global/bin ]; then
-	export PATH="$HOME/.npm-global/bin:$PATH"
-fi
-
-if [ -x $HOME/.zshlrc ]; then
-    source $HOME/.zshlrc
-fi
-
-if [ -f $HOME/.cargo/env ]; then
-	. $HOME/.cargo/env
-fi
 
 source $ZSH/oh-my-zsh.sh
