@@ -3,5 +3,6 @@
 	"clangd.inlayHints.enable": false,
 	"clangd.arguments": [
 		"--header-insertion=never"
-	]
+	],
+	"eslint.autoFixOnSave": true
 }
