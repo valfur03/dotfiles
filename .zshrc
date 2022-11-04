@@ -98,6 +98,10 @@ plugins=(command-not-found git)
 
 # FILES
 
+if [ -x $HOME/.zshlrc ]; then
+    source $HOME/.zshlrc
+fi
+
 if [ -d $HOME/.local/bin ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
@@ -113,10 +117,6 @@ fi
 export PNPM_HOME="$HOME/.local/share/pnpm"
 if [ -d $PNPM_HOME ]; then
 	export PATH="$PNPM_HOME:$PATH"
-fi
-
-if [ -x $HOME/.zshlrc ]; then
-    source $HOME/.zshlrc
 fi
 
 if [ -f $HOME/.cargo/env ]; then
