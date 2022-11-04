@@ -1,6 +1,6 @@
 {
 	"emmet.includeLanguages": {"javascript": "javascriptreact"},
-	"clangd.inlayHints.enable": false,
+	"inlayHint.enable": false,
 	"clangd.arguments": [
 		"--header-insertion=never"
 	],
