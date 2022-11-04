@@ -110,6 +110,11 @@ if [ -d $HOME/.npm-global/bin ]; then
 	export PATH="$HOME/.npm-global/bin:$PATH"
 fi
 
+export PNPM_HOME="$HOME/.local/share/pnpm"
+if [ -d $PNPM_HOME ]; then
+	export PATH="$PNPM_HOME:$PATH"
+fi
+
 if [ -x $HOME/.zshlrc ]; then
     source $HOME/.zshlrc
 fi
