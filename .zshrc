@@ -129,6 +129,7 @@ export GITUSER=valfur03
 export GITMAIL=valentin.furmanek@gmail.com
 export EDITOR=$(command -v nvim)
 export GEM_HOME="$HOME/gems"
+export GPG_TTY=$(tty)
 
 ## 42 related
 
