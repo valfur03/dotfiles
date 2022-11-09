@@ -4,5 +4,8 @@
 	"clangd.arguments": [
 		"--header-insertion=never"
 	],
-	"eslint.autoFixOnSave": true
+	"eslint.autoFixOnSave": true,
+	"diagnostic-languageserver.filetypes": {
+		"sh": "shellcheck"
+	}
 }
