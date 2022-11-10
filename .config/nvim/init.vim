@@ -7,7 +7,7 @@ call plug#begin()
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 	" Nvim Treesitter configurations and abstraction layer
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+	Plug 'nvim-treesitter/nvim-treesitter', {'branch': 'v0.8.0', 'do': ':TSUpdate'}
 
 	" snippets
 	Plug 'SirVer/ultisnips'
