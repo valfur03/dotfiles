@@ -1,5 +1,9 @@
 call plug#begin()
 
+	" All the lua functions I don't want to write twice.
+	" NEEDED for 'sindrets/diffview.nvim'
+	Plug 'nvim-lua/plenary.nvim'
+
 	" High Contrast & Vivid Color Scheme based on Monokai Pro 
 	Plug	'sainnhe/sonokai'
 
@@ -15,6 +19,13 @@ call plug#begin()
 
 	" Vim plugin, insert or delete brackets, parens, quotes in pair
 	Plug 'jiangmiao/auto-pairs'
+
+	" Lua `fork` of vim-web-devicons for neovim
+	" NEEDED for 'sindrets/diffview.nvim'
+	Plug 'nvim-tree/nvim-web-devicons'
+
+	" Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
+	Plug 'sindrets/diffview.nvim'
 
 
 call plug#end()
