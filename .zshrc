@@ -119,6 +119,10 @@ if [ -d $PNPM_HOME ]; then
 	export PATH="$PNPM_HOME:$PATH"
 fi
 
+if [ -d $HOME/.cargo/bin ]; then
+	export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 if [ -f $HOME/.cargo/env ]; then
 	. $HOME/.cargo/env
 fi
