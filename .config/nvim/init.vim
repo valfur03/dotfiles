@@ -42,15 +42,18 @@ silent!	colorscheme	sonokai
 set		colorcolumn=81
 set		mouse=
 set		showcmd
-set		autoindent
-set		smarttab
-set		tabstop=4
-set		shiftround
-set		shiftwidth=4
 set		t_ut=
 set		wildmode=longest,list,full
 set		wildmenu
 set		wildignore+=*.o,*.d
+
+" Tabs
+set		autoindent
+set		expandtab
+set		tabstop=4
+set		shiftround
+set		shiftwidth=2
+set		smarttab
 
 map		,d	$a /* ===== DELETE ===== */<ESC>
 map		,D	o<ENTER>/* ===== DELETE ===== */<ENTER><ESC>
