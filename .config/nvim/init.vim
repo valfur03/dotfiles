@@ -2,6 +2,7 @@ call plug#begin()
 
 	" All the lua functions I don't want to write twice.
 	" NEEDED for 'sindrets/diffview.nvim'
+	" NEEDED for 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 
 	" High Contrast & Vivid Color Scheme based on Monokai Pro 
@@ -22,16 +23,21 @@ call plug#begin()
 
 	" Lua `fork` of vim-web-devicons for neovim
 	" NEEDED for 'sindrets/diffview.nvim'
+	" RECOMMENDED for 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-tree/nvim-web-devicons'
 
 	" Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
 	Plug 'sindrets/diffview.nvim'
+
+	" Find, Filter, Preview, Pick. All lua, all the time.
+	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 
 call plug#end()
 
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/tree-sitter.vim
+source $HOME/.config/nvim/plug-config/telescope.vim
 
 set		nu
 set		list
