@@ -152,6 +152,8 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " show chunk diff at current position
 nmap gs <Plug>(coc-git-chunkinfo)
+" show commit contains current position
+nmap gc <Plug>(coc-git-commit)
 " navigate conflicts of current buffer
 nmap [c <Plug>(coc-git-prevconflict)
 nmap ]c <Plug>(coc-git-nextconflict)
