@@ -168,7 +168,7 @@ let g:coc_global_extensions = [
 	\ 	'coc-html',
 	\ 	'coc-jest',
 	\ 	'coc-json',
-	\ 	'coc-rls',
+	\ 	'coc-rust-analyzer',
 	\ 	'coc-snippets',
 	\ 	'coc-tsserver'
 	\ ]
