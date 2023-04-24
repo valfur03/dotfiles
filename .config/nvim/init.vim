@@ -32,6 +32,9 @@ call plug#begin()
 	" Find, Filter, Preview, Pick. All lua, all the time.
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
+    " continuously updated session files
+    Plug 'tpope/vim-obsession'
+
 
 call plug#end()
 
