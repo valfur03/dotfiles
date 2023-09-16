@@ -62,9 +62,6 @@ set		smarttab
 " set		expandtab
 " set		shiftwidth=2
 
-map		,d	$a /* ===== DELETE ===== */<ESC>
-map		,D	o<ENTER>/* ===== DELETE ===== */<ENTER><ESC>
-map		,t	call TlistOpen
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/tree-sitter.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
