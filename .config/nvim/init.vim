@@ -38,10 +38,6 @@ call plug#begin()
 
 call plug#end()
 
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/tree-sitter.vim
-source $HOME/.config/nvim/plug-config/telescope.vim
-
 set		nu
 set		list
 set		listchars=tab:‣\ ,space:·
@@ -67,3 +63,6 @@ set		smarttab
 map		,d	$a /* ===== DELETE ===== */<ESC>
 map		,D	o<ENTER>/* ===== DELETE ===== */<ENTER><ESC>
 map		,t	call TlistOpen
+source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/tree-sitter.vim
+source $HOME/.config/nvim/plug-config/telescope.vim
