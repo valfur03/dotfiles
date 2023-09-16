@@ -132,6 +132,12 @@ if [ -f $HOME/.cargo/env ]; then
 	. $HOME/.cargo/env
 fi
 
+export PNPM_HOME="/home/vfurmane/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 # VARIABLES
 
 export GITUSER=valfur03
