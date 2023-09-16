@@ -158,6 +158,9 @@ nmap gc <Plug>(coc-git-commit)
 nmap [c <Plug>(coc-git-prevconflict)
 nmap ]c <Plug>(coc-git-nextconflict)
 
+" rename symbol
+nmap <leader>rn <Plug>(coc-rename)
+
 " extensions to install
 let g:coc_global_extensions = [
 	\ 	'coc-clangd',

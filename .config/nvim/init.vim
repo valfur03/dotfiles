@@ -38,6 +38,7 @@ call plug#begin()
 
 call plug#end()
 
+let		mapleader=";"
 set		nu
 set		list
 set		listchars=tab:‣\ ,space:·
