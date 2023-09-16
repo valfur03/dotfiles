@@ -55,11 +55,12 @@ set		wildignore+=*.o,*.d
 
 " Tabs
 set		autoindent
-set		expandtab
 set		tabstop=4
 set		shiftround
-set		shiftwidth=2
 set		smarttab
+" When developing JS (yuck)
+" set		expandtab
+" set		shiftwidth=2
 
 map		,d	$a /* ===== DELETE ===== */<ESC>
 map		,D	o<ENTER>/* ===== DELETE ===== */<ENTER><ESC>
