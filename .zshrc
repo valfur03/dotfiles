@@ -119,6 +119,11 @@ if [ -d $PNPM_HOME ]; then
 	export PATH="$PNPM_HOME:$PATH"
 fi
 
+export RUBY_GEM_HOME="$HOME/.local/share/gem/ruby/3.0.0/bin"
+if [ -d $RUBY_GEM_HOME ]; then
+	export PATH="$RUBY_GEM_HOME:$PATH"
+fi
+
 if [ -d $HOME/.cargo/bin ]; then
 	export PATH="$HOME/.cargo/bin:$PATH"
 fi
