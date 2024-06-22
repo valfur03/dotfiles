@@ -139,7 +139,7 @@ export NVM_DIR="$HOME/.nvm"
 # opam configuration
 [[ ! -r /mnt/nfs/homes/vfurmane/.opam/opam-init/init.zsh ]] || source /mnt/nfs/homes/vfurmane/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-export PNPM_HOME="/home/vfurmane/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
