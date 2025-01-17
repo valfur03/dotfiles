@@ -7,5 +7,6 @@
 	"eslint.autoFixOnSave": true,
 	"diagnostic-languageserver.filetypes": {
 		"sh": "shellcheck"
-	}
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }
