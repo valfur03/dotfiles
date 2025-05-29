@@ -8,5 +8,8 @@
 	"diagnostic-languageserver.filetypes": {
 		"sh": "shellcheck"
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "[c]": {
+	  "coc.preferences.formatOnSave": true
+  }
 }
