@@ -68,7 +68,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(command-not-found git tmux nvm)
+plugins=(command-not-found git tmux nvm golang)
 
 # User configuration
 
