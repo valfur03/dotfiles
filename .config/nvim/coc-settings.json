@@ -6,10 +6,14 @@
 	],
 	"eslint.autoFixOnSave": true,
 	"diagnostic-languageserver.filetypes": {
+		"go": "golangci-lint",
 		"sh": "shellcheck"
   },
   "snippets.ultisnips.pythonPrompt": false,
   "[c]": {
+	  "coc.preferences.formatOnSave": true
+  },
+  "[go]": {
 	  "coc.preferences.formatOnSave": true
   }
 }
