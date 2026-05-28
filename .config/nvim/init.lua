@@ -1,5 +1,8 @@
 vim.g.mapleader = ";"
 
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 vim.opt.nu = true
 vim.opt.scl = "yes"
 vim.opt.list = true
