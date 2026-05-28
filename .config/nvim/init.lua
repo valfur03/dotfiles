@@ -79,5 +79,5 @@ require'nvim-treesitter'.install {
 	'yaml',
 }
 vim.api.nvim_create_autocmd('FileType', {
-	callback = function() vim.treesitter.start() end,
+	callback = function(args) pcall(vim.treesitter.start, args.buf) end,
 })
