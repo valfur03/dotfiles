@@ -70,7 +70,7 @@ require'nvim-treesitter'.install {
 	'printf',
 	'python',
 	'regex',
-	'sccs',
+	'scss',
 	'ssh_config',
 	'tmux',
 	'typescript',
