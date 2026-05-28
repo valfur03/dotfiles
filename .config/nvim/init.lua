@@ -29,6 +29,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
+vim.g.python3_host_prog = vim.fn.expand("~/.config/nvim/venv/bin/python")
+
 vim.g.sonokai_transparent_background = true
 
 vim.cmd.colorscheme("sonokai")
