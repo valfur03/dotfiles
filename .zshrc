@@ -167,5 +167,6 @@ local vfurmane_gpg=$(gpg --list-secret-keys --with-colons --keyid-format=long | 
 	
 alias gituser="$valfur03_git_base"
 alias gituser42="$vfurmane_git_base"
+alias gcwip='git commit --no-verify --no-gpg-sign --message "--wip-- [skip ci]"'
 
 source $ZSH/oh-my-zsh.sh
